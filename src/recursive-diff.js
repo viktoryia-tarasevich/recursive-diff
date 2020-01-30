@@ -48,7 +48,7 @@ function compareValuesAndGetDiff(x, y, type1, type2, path, diff) {
       op: 'add',
       val: y,
     });
-  } else if (type1 !== types.UNDEFINED && type2 === types.UNDEFINED) {
+  } else if (type1 !== types.UNDEFINED && type2 === types.NULL) {
     diff.push({
       path,
       op: 'delete',
